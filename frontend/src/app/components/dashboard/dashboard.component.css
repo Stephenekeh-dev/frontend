@@ -1,0 +1,62 @@
+.dashboard-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  position: relative;
+}
+
+/* Flex container for top section */
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Left side: user details */
+.user-details {
+  text-align: left;
+}
+
+.user-details h3,
+.user-details p {
+  margin: 5px 0;
+  color: #333;
+}
+
+/* Right side: profile image */
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #007bff;
+}
+
+/* Button styling (unchanged) */
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f8d7da;
+  color: #842029;
+  border-radius: 8px;
+  text-align: center;
+}

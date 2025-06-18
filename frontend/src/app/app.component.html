@@ -1,0 +1,9 @@
+<div [class.dark-theme]="isDarkMode()" class="app-container">
+  <button (click)="toggleTheme()" title="Toggle Theme">
+    <i [class]="isDarkMode() ? 'fas fa-sun' : 'fas fa-moon'"></i>
+  </button>
+  
+
+</div>
+<router-outlet></router-outlet>
+

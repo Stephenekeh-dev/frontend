@@ -1,0 +1,40 @@
+<div class="register-container">
+  <h2>Register</h2>
+
+  <form (submit)="register(); $event.preventDefault()">
+    <label>
+      First Name:
+      <input type="text" [(ngModel)]="firstName" name="firstName" required />
+    </label>
+
+    <label>
+      Last Name:
+      <input type="text" [(ngModel)]="lastName" name="lastName" required />
+    </label>
+
+    <label>
+      Email:
+      <input type="text" [(ngModel)]="username" name="username" required />
+    </label>
+
+    <label>
+      Password:
+      <input type="password" [(ngModel)]="password" name="password" required />
+    </label>
+
+    <label>
+      Age:
+      <input type="number" [(ngModel)]="age" name="age" required />
+    </label>
+
+    <label>
+      Profile Image:
+      <input type="file" (change)="onFileSelected($event)" />
+    </label>
+
+    <button type="submit">Register</button>
+  </form>
+
+  <div class="message error" *ngIf="errorMessage">{{ errorMessage }}</div>
+  <div class="message success" *ngIf="successMessage">{{ successMessage }}</div>
+</div>
