@@ -33,7 +33,7 @@ interface DashboardData {
   providedIn: 'root'
 })
 export class AuthService {
-  private baseUrl = 'http://localhost:8080';
+  private baseUrl = 'https://springjwt-backend-1.onrender.com';
 
   constructor(private http: HttpClient) {}
 

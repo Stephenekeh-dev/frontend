@@ -1,9 +1,11 @@
 <div [class.dark-theme]="isDarkMode()" class="app-container">
-  <button (click)="toggleTheme()" title="Toggle Theme">
-    <i [class]="isDarkMode() ? 'fas fa-sun' : 'fas fa-moon'"></i>
-  </button>
-  
+  <h1 class="app-title">Spring Security and JWT Auth Demo</h1>
 
+  <div class="theme-toggle-container">
+    <button (click)="toggleTheme()" title="Toggle Theme">
+      <i [class]="isDarkMode() ? 'fas fa-sun' : 'fas fa-moon'"></i>
+    </button>
+  </div>
 </div>
-<router-outlet></router-outlet>
 
+<router-outlet></router-outlet>

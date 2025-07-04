@@ -1,9 +1,9 @@
-/* styles.css */
-
 body {
   background-color: white;
   color: black;
   transition: background-color 0.3s, color 0.3s;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
 body.dark-theme {
@@ -11,9 +11,58 @@ body.dark-theme {
   color: white;
 }
 
+/* Container */
+.app-container {
+  position: relative;
+  padding: 60px 20px 20px;
+  text-align: center;
+}
+
+/* Header title */
+.app-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0;
+  color: #222;
+  transition: color 0.3s;
+}
+
+/* When dark-theme class is applied */
+.dark-theme .app-title {
+  color: white;
+}
+
+/* Toggle button container */
+.theme-toggle-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* Button */
 button {
-  margin: 10px;
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .app-container {
+    padding-top: 80px;
+  }
+
+  .app-title {
+    font-size: 1.4rem;
+  }
+
+  .theme-toggle-container {
+    top: 10px;
+    right: 10px;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
 }

@@ -58,4 +58,14 @@ export class RegisterComponent {
       }
     });
   }
+  incrementAge() {
+  if (this.age === null) this.age = 0;
+  this.age++;
+}
+
+decrementAge() {
+  if (this.age === null || this.age <= 0) return;
+  this.age--;
+}
+
 }

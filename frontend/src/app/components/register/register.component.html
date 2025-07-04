@@ -1,7 +1,7 @@
 <div class="register-container">
   <h2>Register</h2>
 
-  <form (submit)="register(); $event.preventDefault()">
+  <form #form="ngForm" (submit)="register(); $event.preventDefault()">
     <label>
       First Name:
       <input type="text" [(ngModel)]="firstName" name="firstName" required />
@@ -12,10 +12,12 @@
       <input type="text" [(ngModel)]="lastName" name="lastName" required />
     </label>
 
-    <label>
-      Email:
+   <label>
+      Username:
       <input type="text" [(ngModel)]="username" name="username" required />
     </label>
+
+  
 
     <label>
       Password:
@@ -23,9 +25,9 @@
     </label>
 
     <label>
-      Age:
-      <input type="number" [(ngModel)]="age" name="age" required />
-    </label>
+  Age:
+  <input type="number" [(ngModel)]="age" name="age" required />
+</label>
 
     <label>
       Profile Image:
